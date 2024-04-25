@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+}
+/* estilos para el nav(menú) */
+nav{
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+}
+.referencias-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.referencias-menu li{
+    margin: 0% 5%;
+}
+.enlaces-paginas{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.enlaces-paginas:hover{
+    color: rgb(175, 112, 112);
+}
+
+
