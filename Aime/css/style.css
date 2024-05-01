@@ -40,4 +40,7 @@ main{
 .mapa{
     display: flex;
     justify-content: center;
+    background-color: #4A4138;
+    padding: 2%;
+    width: 80%;
 }
