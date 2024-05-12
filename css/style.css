@@ -1,0 +1,364 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    width: 100%;
+    background-color: #000000;
+}
+
+header {
+    background-color: #1D2934;
+    color: #acacac;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    z-index: 1;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 600;
+    font-style: normal;
+    margin: 20px 0px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-btn, .button-menu-toggle {
+    display: none;
+}
+
+.menu-link {
+    color: #acacac;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-link:hover{
+    color: #000000;
+    font-weight: 900;
+    text-shadow: 0 0 5px #8f93a8;
+}
+
+.menu-link.active {
+    color: #000000;
+    font-weight: 900;
+    text-shadow: 0 0 5px #8f93a8;
+}
+
+main {
+    flex: 1; 
+    padding: 20px;
+    margin-top: 120px;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+section {
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #121a22a6;
+    padding: 2px 10px 2px 10px;
+    color: #acacac;
+
+}
+
+.titulo-section {
+    margin: 0px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer {
+    background-color: #1D2934;
+    color: #acacac;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.mapa {
+    margin: 10px 0px;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+}
+
+.redes-sociales a {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.redes-sociales a:hover {
+    box-shadow: 0  0 40px rgba(199, 102, 255, 0.685); 
+    height: 51px;
+}
+
+.main-coctel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 120px;
+    justify-content: center;
+}
+
+.carta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.carta iframe{
+    height: 70vh;
+    width: 80%;
+}
+
+.carrusel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotos {
+    max-width: 80vw; 
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.fotos div {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotos img {
+    max-width: 400px;
+    height: auto;
+}
+
+.fotos video {
+    max-width: 500px;
+    height: auto;
+    max-height: 500px;
+}
+
+.main-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-form {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #acacac;
+    padding: 10px;
+    background-color: #121a2200;
+}
+
+.formulario {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #121a22;
+    color: #acacac;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-right: 40%;
+    box-shadow: 0  0 10px rgb(105, 128, 150); 
+}
+
+label {
+    margin-bottom: 3px;
+    margin-left: 2px;
+}
+
+input, select {
+    height: 30px;
+}
+
+.suscribirse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.suscribirse label {
+    margin-right: 20px;
+}
+
+.inputs {
+    border: #51556e 1px solid;
+    background-color: #202a35;
+    color: #acacac;
+    border-radius: 6px;
+}
+
+.inputs:hover {
+    border: #878ba3 1px solid;
+    background-color: #293541;
+}
+
+.campo-incompleto {
+    border: solid 1px red;
+}
+
+.mensaje-campo {
+    color: red;
+    font-size: 12px;
+    position: static;
+}
+
+.enviar {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.enviar button {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #1f2838;
+    border: solid 1px #51556e;
+    color: #888383;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.enviar button:hover {
+    background-color: #364663;
+    border: solid 1px #afafaf;
+    color: #d6d6d6;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1450px) {
+    header {
+        height: 70px;
+    }
+    header h1 {
+        margin-top: 0px;
+        font-size: 30px;
+    }
+    main {
+        margin-top: 110px;
+    }
+    .fotos {
+        max-width: 400px;
+    }
+
+    .menu {
+        margin-top: -15px;
+    }
+    .menu-btn{
+        display: block;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        margin-top: -55px;
+    }
+    .menu-btn:hover{
+        background-color: rgba(0, 0, 0, 0.144);
+        border: none;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        height: 40px;
+    }
+    header h1 {
+        display: none;
+    }
+    main {
+        margin-top: 100px;
+    }
+    .menu {
+        margin-top: 10px;
+    }
+    .main-f {
+        margin-top: 60px;
+        padding: 10px;
+    }
+    .carta iframe{
+        height: 500px;
+        width: 100%;
+    }
+    .main-coctel {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        margin-top: 150px;
+    }
+    .section {
+        width: 90%;
+    }
+    .section-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .formulario {
+        width: 90vw;
+    }
+    .fotos {
+        width: 80vw;
+    }
+    .fotos img {
+        max-width: 300px;
+        height: auto;
+    }
+    .fotos video {
+        max-width: 400px;
+        height: auto;
+        max-height: 500px;
+    }
+    .menu-btn{
+        display: block;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        margin-top: -50px;
+    }
+    .menu-btn:hover{
+        background-color: rgba(0, 0, 0, 0.144);
+        border: none;
+    }
+}

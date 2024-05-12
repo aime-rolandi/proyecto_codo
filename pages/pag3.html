@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enemy’s House</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/media/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <h1>Enemy’s House</h1>
+        <nav id="menu-container"></nav>
+    </header>
+    <main class="main-f">
+        <section class="section-form"> 
+            <div>
+                <form id="formulario" class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input class="inputs" type="text" id="nombre" name="nombre"><br>
+                    <label for="correo">Correo electrónico:</label>
+                    <input class="inputs" type="email" id="correo" name="correo"><br>
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select class="inputs" id="motivo" name="motivo">
+                        <option value="">Selecciona un motivo</option>
+                        <option value="consulta">Consulta sobre películas de terror</option>
+                        <option value="sugerencia">Sugerencia de películas</option>
+                        <option value="queja">Queja sobre contenido</option>
+                        <option value="otro">Otro</option>
+                    </select><br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="inputs" id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+                    <label id="desea-suscribirse">¿Deseas recibir mensajes?</label>
+                    <div class="suscribirse">
+                        <input class="inputs" type="radio" id="si" name="suscripcion" value="si"><label for="si">Si</label>
+                        <input class="inputs" type="radio" id="no" name="suscripcion" value="no"><label for="no">No</label><br>
+                    </div> <br>
+                    <label for="archivo">Adjuntar archivo:</label>
+                    <input type="file" id="archivo" name="archivo">
+                    <div class="enviar">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Enemy’s House</p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/form.js"></script>
+</body>
+</html>
