@@ -20,7 +20,7 @@ $(document).ready(function(){
     $('.fotos').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         arrows: true,
         dots: false,
