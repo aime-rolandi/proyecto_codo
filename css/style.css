@@ -47,17 +47,16 @@ header nav ul li {
     color: #acacac;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 900;
 }
 
 .menu-link:hover{
     color: #000000;
-    font-weight: 900;
     text-shadow: 0 0 5px #8f93a8;
 }
 
 .menu-link.active {
     color: #000000;
-    font-weight: 900;
     text-shadow: 0 0 5px #8f93a8;
 }
 
@@ -109,7 +108,7 @@ footer {
     transition: transform 0.3s ease, filter 0.5s ease;
 }
 
-.redes-sociales a:hover {
+.redes-sociales a:hover, .redes-sociales a:active {
     filter:drop-shadow( 0 0 20px  rgb(199, 102, 255)); 
     transform: scale(1.1);
 }
@@ -298,6 +297,10 @@ input, select {
         background-color: rgba(0, 0, 0, 0.144);
         border: none;
     }
+    .redes-sociales a:active {
+        filter: drop-shadow(0 0 15px rgb(199, 102, 255));
+        transform: scale(1.05);
+    }
 }
 
 @media (max-width: 900px) {
@@ -361,5 +364,9 @@ input, select {
     .menu-btn:hover{
         background-color: rgba(0, 0, 0, 0.144);
         border: none;
+    }
+    .redes-sociales a:active {
+        filter: drop-shadow(0 0 15px rgb(199, 102, 255));
+        transform: scale(1.05);
     }
 }
