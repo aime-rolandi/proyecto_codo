@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 </head>
 <body>
     <header>
@@ -18,7 +18,8 @@
         <nav id="menu-container"></nav>
     </header>
     <main class="main-f">
-        <section class="section-form"> 
+        <section class="section-form">
+            <h2>Formulario de contacto</h2>
             <div>
                 <form id="formulario" class="formulario">
                     <label for="nombre">Nombre:</label>
@@ -39,7 +40,7 @@
                     <div class="suscribirse">
                         <input class="inputs" type="radio" id="si" name="suscripcion" value="si"><label for="si">Si</label>
                         <input class="inputs" type="radio" id="no" name="suscripcion" value="no"><label for="no">No</label><br>
-                    </div> <br>
+                    </div><br>
                     <label for="archivo">Adjuntar archivo:</label>
                     <input type="file" id="archivo" name="archivo">
                     <div class="enviar">
@@ -52,6 +53,8 @@
     <footer>
         <p>&copy; 2024 Enemy’s House ~ Proyecto Fron-End - codo a codo</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/form.js"></script>
 </body>

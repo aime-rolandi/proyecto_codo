@@ -213,12 +213,20 @@ footer {
 .section-form {
     display: flex;
     width: 50%;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
     border-radius: 10px;
     color: #acacac;
     padding: 10px;
     background-color: #121a2200;
+    
+}
+
+.section-form h2 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .formulario {
