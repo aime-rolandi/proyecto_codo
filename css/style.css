@@ -8,6 +8,7 @@ body {
     min-height: 100vh; 
     width: 100%;
     background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -32,6 +33,10 @@ header h1 {
 header nav ul {
     list-style-type: none;
     padding: 0;
+}
+
+.menu-responsive {
+    display: none;
 }
 
 .menu li {
@@ -372,11 +377,20 @@ input, select {
     .menu li {
         margin-right: 15px;
     }
+    .menu-responsive {
+        display: block;
+        text-align: center;
+        margin-top: 10px; 
+    }
+    .menu-responsive li {
+        display: inline;
+        margin-right: 20px;
+    }
     main {
         margin-top: 100px;
     }
     .menu {
-        margin-top: 10px;
+        display: none;
     }
     .main-f {
         margin-top: 60px;
