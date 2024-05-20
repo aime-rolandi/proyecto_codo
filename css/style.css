@@ -34,7 +34,7 @@ header nav ul {
     padding: 0;
 }
 
-header nav ul li {
+.menu li {
     display: inline;
     margin-right: 20px;
 }
@@ -220,7 +220,6 @@ footer {
     color: #acacac;
     padding: 10px;
     background-color: #121a2200;
-    
 }
 
 .section-form h2 {
@@ -369,6 +368,9 @@ input, select {
     }
     header h1 {
         display: none;
+    }
+    .menu li {
+        margin-right: 15px;
     }
     main {
         margin-top: 100px;
