@@ -44,10 +44,6 @@ header nav ul {
     margin-right: 20px;
 }
 
-.menu-btn, .button-menu-toggle {
-    display: none;
-}
-
 .menu-link {
     color: #acacac;
     text-decoration: none;
